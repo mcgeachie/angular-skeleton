@@ -41,7 +41,7 @@ module.exports = function (grunt) {
         tasks: [
           'compass:server',
           'autoprefixer',
-          'concat:css'
+          'concat'
         ]
       },
       gruntfile: {
@@ -114,17 +114,17 @@ module.exports = function (grunt) {
         reporter: require('jshint-stylish')
       },
       all: {
-        ignores: ['<%= tvConfig.app %>/components/{,*/}*.spec.js'],
         src: [
           'Gruntfile.js',
-          '<%= tvConfig.app %>/components/{,*/}*.js'
+          '<%= tvConfig.app %>/components/**/*.js',
+          '!<%= tvConfig.app %>/components/**/*.spec.js'
         ]
       },
       test: {
         options: {
           jshintrc: '.test.jshintrc'
         },
-        src: ['<%= tvConfig.app %>/components/{,*/}*.spec.js']
+        src: ['<%= tvConfig.app %>/components/**/*.spec.js']
       }
     },
 
@@ -387,7 +387,7 @@ module.exports = function (grunt) {
 
     karma: {
       unit: {
-        tvConfigFile: 'karma.conf.js',
+        configFile: 'karma.conf.js',
         singleRun: true
       }
     }

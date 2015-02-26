@@ -1,0 +1,21 @@
+/* line 4, ../../../app/components/about/about.scss */
+.about {
+  color: magenta;
+}
+
+/* Responsive: Portrait tablets and up */
+
+/*# sourceMappingURL=about.css.map */
+
+/* line 6, ../../../app/components/global-styles/main.scss */
+.main h4 {
+  color: #C03;
+}
+
+/* Responsive: Portrait tablets and up */
+
+/*# sourceMappingURL=main.css.map */
+
+/* Responsive: Portrait tablets and up */
+
+/*# sourceMappingURL=main.css.map */
